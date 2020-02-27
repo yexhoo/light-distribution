@@ -4,8 +4,8 @@ Algorithm that obtains the minimum amount of light spots needed to illuminate a 
 
 A very careful electrician is trying to illuminate at the lowest possible cost the customer rooms.The rooms that he illuminates are always in matrix form (See figure 1). Since the light spots are very expensive, he tries to Illuminate the entire room using the minimum amount of them. The light spots have only scope to illuminate the room horizontally and vertically way (See figure 2 and figure 3). The rooms can have walls inside them, in this case, the light range of a particular light spot would be interrupted (See figure 4).
 
-
-<table align="center" style="width:70%">
+<p align="center">
+  <table align="center" style="width:70%">
   <tr>
     <td align="center"><img src="resources/figure1.png"><p>figure 1</td>
     <td align="center"><p><img src="resources/figure2.png"></p>figure 2</td>
@@ -15,6 +15,7 @@ A very careful electrician is trying to illuminate at the lowest possible cost t
     <td align="center"><p><img src="resources/figure4.png"></p>figure 4</td>
   </tr>
 </table>
+</p>
 
 ## Options
 
