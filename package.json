@@ -1,0 +1,24 @@
+{
+  "name": "light-distribution",
+  "version": "1.0.0",
+  "description": "Algorithm that obtains the minimum amount of lights needed to illuminate a room.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yexhoo/light-distribution.git"
+  },
+  "keywords": [
+    "algorthm",
+    "light",
+    "distribution"
+  ],
+  "author": "yexhoo (Josue Nolasco Miranda)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yexhoo/light-distribution/issues"
+  },
+  "homepage": "https://github.com/yexhoo/light-distribution#readme"
+}
