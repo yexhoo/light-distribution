@@ -1,7 +1,7 @@
 const expect = require("chai").expect
-const execute = require("../src/light-distribution").execute
+const execute = require("../src/distribution").execute
 
-describe('Light Distribution Test', () => {
+describe('Light Distribution Validation Test', () => {
 
     let testFile, resources = __dirname.concat("/resources/");
 
@@ -28,5 +28,10 @@ describe('Light Distribution Test', () => {
     it('All rows of matrix must have the same length', () => {
         testFile = resources.concat('different-length-lines-file.txt')
         expect(() => execute(testFile)).to.throw(Error, "All rows of matrix must have the same length")
+    });
+
+    it('Valid matrix', () => {
+        testFile = resources.concat('matrix.txt')
+        expect(execute(testFile).length).to.equal(4)
     });
 });
