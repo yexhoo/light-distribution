@@ -2,20 +2,18 @@
 
 Algorithm that obtains the minimum amount of light spots needed to illuminate a room.
 
-A very careful electrician is trying to illuminate at the lowest possible cost the customer rooms.The rooms that he illuminates are always in matrix form (See figure 1). Since the light spots are very expensive, he tries to Illuminate the entire room using the minimum amount of them. The light spots have only scope to illuminate the room horizontally and vertically way (See figure 2 and figure 3). The rooms can have walls inside them, in this case, the light range of a particular light spot would be interrupted (See figure 4).
+A very careful electrician is trying to illuminate at the lowest possible cost the customer rooms.The rooms that he illuminates are always in matrix form (See figure 1). Since the light spots are very expensive, he tries to Illuminate the entire room using the minimum amount of them. The light spots have only scope to illuminate the room horizontally and vertically way (See figure 2 and figure 3). The rooms can have walls inside them, in this case, the light range of a particular light spot would be interrupted (See figure 4.
 
-<p align="center">
-  <table align="center" style="width:70%">
+<table style="width:70%;margin: 0 auto;">
   <tr>
-    <td align="center"><img src="resources/figure1.png"><p>figure 1</td>
-    <td align="center"><p><img src="resources/figure2.png"></p>figure 2</td>
+    <td align="center"><img src="resources/figure1.png"><p>figure 1</p></td>
+    <td align="center"><img src="resources/figure2.png"><p>figure 2</p></td>
   </tr>
   <tr>
-    <td align="center"><p><img src="resources/figure3.png"></p>figure 3</td>
-    <td align="center"><p><img src="resources/figure4.png"></p>figure 4</td>
+    <td align="center"><img src="resources/figure3.png"><p>figure 3</p></td>
+    <td align="center"><img src="resources/figure4.png"><p>figure 4</p></td>
   </tr>
 </table>
-</p>
 
 ## Options
 
