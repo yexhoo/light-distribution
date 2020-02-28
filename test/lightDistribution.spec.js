@@ -1,6 +1,5 @@
-var expect = require("chai").expect
-var execute = require("../src/light-distribution").execute
-var path = require('path');
+const expect = require("chai").expect
+const execute = require("../src/light-distribution").execute
 
 describe('Light Distribution Test', () => {
 
@@ -19,5 +18,15 @@ describe('Light Distribution Test', () => {
     it('Empty File', () => {
         testFile = resources.concat('empty-file.txt')
         expect(() => execute(testFile)).to.throw(Error, "Empty file")
+    });
+
+    it('Matrix must contain only values between 0 and 1', () => {
+        testFile = resources.concat('invalid-charaters-file.txt')
+        expect(() => execute(testFile)).to.throw(Error, "Matrix must contain only values between 0 and 1")
+    });
+
+    it('All rows of matrix must have the same length', () => {
+        testFile = resources.concat('different-length-lines-file.txt')
+        expect(() => execute(testFile)).to.throw(Error, "All rows of matrix must have the same length")
     });
 });

@@ -1,12 +1,12 @@
 const validator = require("./validator")
-const wrapper = require("./fileWrapper")
+const extractor = require("./extractor")
 
 exports.execute = (filePath) => {
 
     const room = [];
     
     validator.file(filePath)
-    const matrix = wrapper.getMatrix(filePath)
+    const matrix = extractor.get(filePath)
     validator.matrix(matrix)
 
     return room;
