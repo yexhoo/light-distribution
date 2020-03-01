@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 exports.file = (filePath) => {
-    
+
     if (!filePath) {
         throw new Error("Invalid file name")
     }
@@ -12,7 +12,7 @@ exports.file = (filePath) => {
 }
 
 exports.matrix = (matrix) => {
-    
+
     if (!matrix.length) {
         throw new Error("Empty file")
     }
