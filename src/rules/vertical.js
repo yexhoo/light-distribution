@@ -29,11 +29,10 @@ const search = (cell, room) => {
     let node
 
     if (common.isAvailable(cell)) {
-        const neighborsList = neighbors.get(cell, room)
-
-        if (neighborsList.length >= constants.THREE_OR_MORE_NEIGHBORS
-            && neighborsList.every((e) => common.isAvailable(e))) {
-
+        const list = neighbors.getVerticals(cell, room)
+        if (list.length == constants.ONE_NEIGHBOR
+            && cellUtil.isVertical(cell, list[0])
+            && list.every((e) => common.isAvailable(e))) {
             node = cellUtil.deepCopy(room[cell.y][cell.x])
         }
     }
@@ -43,7 +42,7 @@ const search = (cell, room) => {
 
 const update = (nodes, room) => {
     nodes.forEach(node => {
-        if (!(cellUtil.hasHorizontal(node, room) || cellUtil.hasVertical(node, room))) {
+        if (!cellUtil.hasVertical(node, room)) {
             room[node.y][node.x].hasLightSpot = true
         }
     });

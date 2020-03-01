@@ -29,10 +29,11 @@ const search = (cell, room) => {
     let node
 
     if (common.isAvailable(cell)) {
-        const neighborsList = neighbors.get(cell, room)
+        const list = neighbors.get(cell, room)
 
-        if (neighborsList.length >= constants.THREE_OR_MORE_NEIGHBORS
-            && neighborsList.every((e) => common.isAvailable(e))) {
+        if (list.length == constants.TWO_NEIGHBORS
+            && cellUtil.arePerpendicular(list)
+            && list.every((e) => common.isAvailable(e))) {
 
             node = cellUtil.deepCopy(room[cell.y][cell.x])
         }

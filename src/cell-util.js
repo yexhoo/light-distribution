@@ -2,6 +2,11 @@ const roomUtil = require("./room-util");
 
 exports.deepCopy = (sourceObj) => JSON.parse(JSON.stringify(sourceObj))
 
+exports.arePerpendicular = (nodes) => nodes[0].x !== nodes[1].x && nodes[0].y !== nodes[1].y
+
+exports.isHorizontal = (node, neighbor) => node.y === neighbor.y
+exports.isVertical = (node, neighbor) => node.x === neighbor.x
+
 exports.hasHorizontal = (node, room) => {
 
     for (i = (node.x - 1); i >= 0; i--) {
