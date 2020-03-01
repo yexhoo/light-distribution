@@ -3,7 +3,7 @@ const execute = require("../src/distribution").execute
 
 describe('Light Distribution Validation Test', () => {
 
-    let testFile, resources = __dirname.concat("/resources/");
+    let testFile, resources = __dirname.concat("/resources/validations/");
 
     it('Invalid file name', () => {
         testFile = null
@@ -30,8 +30,8 @@ describe('Light Distribution Validation Test', () => {
         expect(() => execute(testFile)).to.throw(Error, "All rows of matrix must have the same length")
     });
 
-    it('Valid matrix', () => {
-        testFile = resources.concat('matrix.txt')
+    it('Matrix well formed', () => {
+        testFile = resources.concat('matrix-well-formed.txt')
         expect(execute(testFile).length).to.equal(4)
     });
 });
