@@ -6,12 +6,32 @@ exports.get = (cell, room) => {
     const neighbors = []
 
     Array.prototype.push.apply(neighbors, this.right(cell, room))
-    Array.prototype.push.apply(neighbors, this.up(cell, room))
     Array.prototype.push.apply(neighbors, this.left(cell, room))
+    Array.prototype.push.apply(neighbors, this.up(cell, room))
     Array.prototype.push.apply(neighbors, this.down(cell, room))
 
     return neighbors
 }
+
+exports.getVerticals = (cell, room) => {
+    const neighbors = []
+
+    Array.prototype.push.apply(neighbors, this.up(cell, room))
+    Array.prototype.push.apply(neighbors, this.down(cell, room))
+
+    return neighbors
+}
+
+exports.getHorizontals = (cell, room) => {
+    const neighbors = []
+
+    Array.prototype.push.apply(neighbors, this.right(cell, room))
+    Array.prototype.push.apply(neighbors, this.left(cell, room))
+
+    return neighbors
+}
+
+
 
 exports.down = (cell, room) => {
     const neighbors = []
