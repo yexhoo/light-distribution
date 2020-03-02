@@ -1,7 +1,7 @@
 const validator = require("./validator")
 const extractor = require("./extractor")
 const roomUtil = require("./room-util")
-const rulesProcessor = require("./rules-processor")
+const processor = require("./processor")
 
 exports.execute = (filePath) => {
 
@@ -13,7 +13,7 @@ exports.execute = (filePath) => {
     validator.matrix(matrix)
     room = roomUtil.build(matrix)
 
-    room = rulesProcessor.apply(room)
+    room = processor.apply(room)
 
     return room;
 }

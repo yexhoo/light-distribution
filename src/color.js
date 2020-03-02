@@ -11,5 +11,9 @@ exports.get = (cell) => {
         return chalk.red(constants.BLACK_SQUARE)
     }
 
+    if (cell.hasLight) {
+        return chalk.green(constants.BLACK_SQUARE)
+    }
+
     return chalk.white(constants.BLACK_SQUARE)
 }
