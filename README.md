@@ -89,10 +89,8 @@ $ mocha test/load-room.spec.js
 ### Definitions
 
 * When you run ```load-room.spec.js``` file you can see input and output matrix representation.
-* 0 value in ```load-room.txt``` file 
-is represented by white square
-* 1 value in ```load-room.txt``` file 
-is represented by blue square.
+* 0 value in ```load-room.txt``` file is represented by white square (hall).
+* 1 value in ```load-room.txt``` file is represented by blue square (wall).
 * Red square represents a light spot.
 
 
