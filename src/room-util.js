@@ -4,9 +4,11 @@ const color = require('./color')
 exports.build =
     (matrix) => matrix
         .map((line, y) =>
-            line.map((char, x) => constants.buildCell(char == '1', x, y)))
+            line.map((char, x) =>
+                constants.buildCell(char == '1', x, y)))
 
-exports.print = (room) => {
+exports.print = (room, msg = '') => {
+    console.log("\n", msg)
     room.forEach(row => {
         console.log.apply(this, row.map((cell) => color.get(cell)))
     });

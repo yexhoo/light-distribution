@@ -4,11 +4,7 @@ const buildCell = (wall, x, y) => {
         "hasLightSpot": false,
         "hasLight": false,
         "x": x,
-        "y": y,
-        "isRight": false,
-        "isLeft": false,
-        "isUp": false,
-        "isDown": false
+        "y": y
     }
 }
 
