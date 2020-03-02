@@ -23,7 +23,7 @@ must show the solution of the minimum amount of light spots needed to illuminate
 
 ### Installation
 
-* Open cmd terminal
+* Open a terminal
 * You must have installed the latest version of [Node.js](https://nodejs.org/en/).
 
 ```sh
