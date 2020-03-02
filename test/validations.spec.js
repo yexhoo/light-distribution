@@ -28,10 +28,5 @@ describe('Light Distribution Validation Test', () => {
     it('All rows of matrix must have the same length', () => {
         testFile = resources.concat('different-length-lines-file.txt')
         expect(() => execute(testFile)).to.throw(Error, "All rows of matrix must have the same length")
-    });
-
-    it('Matrix well formed', () => {
-        testFile = resources.concat('matrix-well-formed.txt')
-        expect(execute(testFile).length).to.equal(4)
-    });
+    }); 
 });
